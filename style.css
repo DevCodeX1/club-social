@@ -8,14 +8,15 @@
     --white-color-lightness: 100%
 
     --color-white: hsl(252, 30%, var(--white-color-lightness));
+    --color-white1: hsl(0, 5%, 22%);
     --color-light: hsl(252, 30%, var(--light-color-lightness));
-    --color-gray: hsl(252, 15%, 65%);
+    --color-gray: hsl(197, 35%, 47%);
     --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
-    --color-secondary: hsl(252, 100%, 90%);
+    --color-secondary: hsl(252, 83%, 2%);
     --color-success: hsl(120, 95%, 65%);
     --color-danger: hsl(0, 95%, 65%);
     --color-dark: hsl(252, 30%, var(--dark-color-lightness));
-    --color-black: hsl(252, 30%, 10%);
+    --color-black: hsl(252, 45%, 44%);
 
     --border-radius: 2rem;
     --card-border-radius: 1rem;
@@ -92,7 +93,7 @@ img{
 /* *************NavBar*************** */
 nav{
     width: 100%;
-    background: rgb(100, 92, 92);
+    background: var(--color-white1);
     padding: 0.7rem 0;
     position: fixed;
     top: 0;
@@ -151,7 +152,7 @@ main .container .left{
 }
 main .container .left .profile{
     padding: var(--card-padding);
-    background: rgb(100, 92, 92);
+    background: var(--color-white1);
     border-radius: var(--card-border-radius);
     display: flex;
     align-items: center;
@@ -162,7 +163,7 @@ main .container .left .profile{
 /* ============================Side Bar====================================*/
 .left .sidebar{
     margin-top: 1rem;
-    background: rgb(100, 92, 92);
+    background: var(--color-white1);
     border-radius: var(--card-border-radius);
 }
 .left .sidebar .menu-item{
@@ -187,7 +188,7 @@ main .container .left .profile{
 
 .left .sidebar i .notification-count{
     background: var(--color-danger);
-    color: white;
+    color: var(--color-white1);
     font-size: 0.7rem;
     width: fit-content;
     border-radius: 0.8rem;
@@ -245,7 +246,7 @@ main .container .left .profile{
     top: 0;
     left: 110%;
     width: 30rem;
-    background: rgb(100, 92, 92);
+    background: var(--color-white1);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     box-shadow: 0 0 2rem hsl(var(--color-primary), 75%, 60% 25%);
@@ -258,7 +259,7 @@ main .container .left .profile{
     width: 1.2rem;
     height: 1.2rem;
     display: block;
-    background: rgb(100, 92, 92);
+    background: var(--color-white1);
     position: absolute;
     left: -0.6rem;
     transform: rotate(45deg);
@@ -297,7 +298,7 @@ main .container .left .profile{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: rgb(100, 92, 92);
+    color: var(--color-white1);
     font-size: 0.75rem;
     width: 100%;
     position: relative;
@@ -320,7 +321,7 @@ main .container .left .profile{
 }
 
 .middle .stories .story:nth-child(1){
-    background: url('/images/story-1.jpg')
+    background: url('/images/story-6.jpg')
     no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(2){
@@ -360,7 +361,7 @@ main .container .left .profile{
     align-items: center;
     justify-content: space-between;
     margin-top: 1rem;
-    background: white;
+    background: var(--color-white1);
     padding: 0.4rem var(--card-padding);
     border-radius: var(--border-radius);
 
@@ -379,7 +380,7 @@ main .container .left .profile{
 
 /* ========================================Feeds==============================================*/
 .middle .feeds .feed{
-    background: rgb(100, 92, 92);
+    background: var(--color-white1);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     margin: 1rem 0;
@@ -442,7 +443,7 @@ main .container .right{
 }
 
 .right .messages{
-    background: rgb(100, 92, 92);
+    background: var(--color-white1);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
 }
@@ -507,7 +508,7 @@ main .container .right{
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
-    border: 3px solid rgb(100, 92, 92);
+    border: 3px solid var(--color-white1);
     background: var(--color-success);
     position: absolute;
     bottom: 0;
@@ -525,7 +526,7 @@ main .container .right{
     margin: 1rem 0;
 }
 .right .request{
-    background: rgb(100, 92, 92);
+    background: var(--color-white1);
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     margin-bottom: 0.7rem;
@@ -542,7 +543,7 @@ main .container .right{
 
 /* ============================THEME CUSTOMIZATION====================================*/
 .customize-theme{
-    background: rgba(255, 255, 255, 0.5);
+    background: var(--color-white1);
     width: 100vw;
     height: 100vh;
     position: fixed;
